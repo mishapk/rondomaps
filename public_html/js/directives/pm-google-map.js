@@ -116,8 +116,8 @@ app.directive('pmGoogleMap', function factory($window, $rootScope, Places) {
                 // $apply explanation http://jimhoskins.com/2012/12/17/angularjs-and-apply.html
                 scope.$apply(function() {
                     $rootScope.$broadcast('map:pointSelected', {
-                        p_lat: Math.round(event.latLng.lat() * 100) / 100,
-                        p_lng: Math.round(event.latLng.lng() * 100) / 100
+                        p_lat: event.latLng.lat() ,
+                        p_lng: event.latLng.lng() 
                     });
                 });
             });
