@@ -63,7 +63,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=personalmaps',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'vvv',
+			'password' => '',
 			'charset' => 'utf8',
 		),
         'bootstrap' => array(
