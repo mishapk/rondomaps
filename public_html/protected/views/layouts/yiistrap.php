@@ -29,8 +29,8 @@
             <span class="brand"><?php echo CHtml::encode(Yii::app()->name); ?></span>
             <?php $this->widget('zii.widgets.CMenu',array(
                 'items'=>array(
-                    array('label'=>Yii::t('app', 'ENTERPRISES'), 'url'=>array('/enterprises/index'), 'visible'=>Yii::app()->user->checkAccess('viewUsers')),
-		    array('label'=>Yii::t('app', 'PLACES'), 'url'=>array('/places/index'), 'visible'=>!Yii::app()->user->isGuest),
+                    array('label'=>Yii::t('app', 'ENTERPRISES'), 'url'=>array('/places/index#/enterprises/list'), 'visible'=>Yii::app()->user->checkAccess('viewUsers')),
+		    array('label'=>Yii::t('app', 'PLACES'), 'url'=>array('/places/index#/objects/list'), 'visible'=>!Yii::app()->user->isGuest),
                     array('label'=>Yii::t('app', 'USERS'), 'url'=>array('/users/index'), 'visible'=>Yii::app()->user->checkAccess('viewUsers')),
                     array('label'=>Yii::t('app', 'ABOUT'), 'url'=>array('/site/page', 'view'=>'about')),
                     array('label'=>Yii::t('app', 'CONTACT'), 'url'=>array('/site/contact')),

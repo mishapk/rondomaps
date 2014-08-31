@@ -12,22 +12,37 @@ app.config(['$translateProvider', function($translateProvider) {
     $translateProvider.translations(translations);
 }]);
 
+
 app.config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/list', {
+    $routeProvider.when('/enterprises/list', {
+        templateUrl: 'partials/EnterpriseList.html',
+        controller: 'PlacesListController'
+    });
+     
+    $routeProvider.when('/enterprises/add', {
+        templateUrl: 'partials/EnterpriseForm.html',
+        controller: 'PlacesFormController'
+    });
+    $routeProvider.when('/enterprises/edit/:placeId', {
+        templateUrl: 'partials/EnterpriseForm.html',
+        controller: 'PlacesFormController'
+    });
+  //---------------------------------------------------------------
+       $routeProvider.when('/objects/list', {
         templateUrl: 'partials/list.html',
         controller: 'PlacesListController'
     });
-    $routeProvider.when('/add', {
+    $routeProvider.when('/objects/add', {
         templateUrl: 'partials/form.html',
         controller: 'PlacesFormController'
     });
-    $routeProvider.when('/edit/:placeId', {
+    $routeProvider.when('/objects/edit/:placeId', {
         templateUrl: 'partials/form.html',
         controller: 'PlacesFormController'
     });
-    $routeProvider.otherwise({
-        redirectTo: '/list'
-    });
+ //  $routeProvider.otherwise({
+ //      redirectTo: '/list'
+ //  });
 }]);
 
 //app.run(['$translate', 'lang', function($translate, lang) {
