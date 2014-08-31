@@ -1,5 +1,6 @@
 <?php
 return array(
+    'ENTERPRISES' => 'Предприятия',
     'CONTACT_US' => 'Контакты',
     'CONTACT' => 'Контакты',
     'REQUIRED_FIELDS' => 'Обязательные поля отмеченны <span class="required">*</span>.',

@@ -1,7 +1,9 @@
 <?php
 return array(
     'CREATE_PLACE' => 'Создать объект',
+    'CREATE_ENTERPRISE' => 'Создать предприятие',
     'UPDATE_PLACE' => 'Изменить объект',
+    'UPDATE_ENTERPRISE' => 'Изменить предприятие',
     'TITLE' => 'Название',
     'FIELD_NOT_EMPTY' => 'Это поле не может быть пустым',
     'DESCRIPTION' => 'Описание',
@@ -14,5 +16,7 @@ return array(
     'DELETE' => 'Удалить',
     'UPDATE' => 'Изменить',
     'NO_PLACES' => 'Нет объектов',
+    'NO_ENTERPRISE' => 'Нет предприятий',
     'ADD_PLACE' => 'Добавить объект',
+    'ADD_ENTERPRISE' => 'Добавить предприятие', 	
 );
